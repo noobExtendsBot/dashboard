@@ -4,7 +4,7 @@ import "./widgetLarge.css";
 
 const WidgetLarge = () => {
   const Button = ({ type }) => {
-    return <button className={"widgetLargeButton" + type}>{type}</button>;
+    return <button className={"widgetLargeButton " + type}>{type}</button>;
   };
 
   return (
@@ -19,7 +19,11 @@ const WidgetLarge = () => {
         </tr>
         <tr className="widgetLargeTr">
           <td className="widgetLargeUser">
-            <img src="" alt="" className="widgetLargeImg" />
+            <img
+              src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              alt="img"
+              className="widgetLargeImg"
+            />
             <span className="widgetLargeName">Carol</span>
           </td>
           <td className="widgetLargeDate">2 Jun 2021</td>
@@ -30,7 +34,11 @@ const WidgetLarge = () => {
         </tr>
         <tr className="widgetLargeTr">
           <td className="widgetLargeUser">
-            <img src="" alt="" className="widgetLargeImg" />
+            <img
+              src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              alt="img"
+              className="widgetLargeImg"
+            />
             <span className="widgetLargeName">Carol</span>
           </td>
           <td className="widgetLargeDate">2 Jun 2021</td>
@@ -41,7 +49,11 @@ const WidgetLarge = () => {
         </tr>
         <tr className="widgetLargeTr">
           <td className="widgetLargeUser">
-            <img src="" alt="" className="widgetLargeImg" />
+            <img
+              src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+              alt="img"
+              className="widgetLargeImg"
+            />
             <span className="widgetLargeName">Carol</span>
           </td>
           <td className="widgetLargeDate">2 Jun 2021</td>

@@ -1,6 +1,7 @@
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
-
+import UserList from "./components/pages/userList/UserList";
 import Home from "./components/pages/home/Home";
 
 import "./App.css";
@@ -14,7 +15,12 @@ function App() {
           <Sidebar />
         </div>
         <div className="flex-1">
-          <Home />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/users" element={<UserList />} />
+            </Routes>
+          </BrowserRouter>
         </div>
       </div>
     </div>
