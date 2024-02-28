@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Home,
   Timeline,
@@ -10,8 +11,8 @@ import {
   ChatBubbleOutline,
   Work,
   Error,
+  Storefront,
 } from "@mui/icons-material";
-
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -21,25 +22,38 @@ const Sidebar = () => {
         <div className="sidebarMenu mb-10">
           <h3 className="sidebarTitle text-lg font-semibold p-4">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active flex items-center p-4 cursor-pointer">
-              <Home className="mr-2" />
-              Home
-            </li>
-            <li className="sidebarListItem flex items-center p-4 cursor-pointer">
-              <Timeline className="mr-2" /> Analytics
-            </li>
-            <li className="sidebarListItem flex items-center p-4 cursor-pointer">
-              <TrendingUp className="mr-2" /> Sales
-            </li>
+            <Link to="/">
+              <li className="sidebarListItem active flex items-center p-4 cursor-pointer">
+                <Home className="mr-2" />
+                Home
+              </li>
+            </Link>
+            <Link to="/">
+              <li className="sidebarListItem flex items-center p-4 cursor-pointer">
+                <Timeline className="mr-2" /> Analytics
+              </li>
+            </Link>
+            <Link to="/">
+              <li className="sidebarListItem flex items-center p-4 cursor-pointer">
+                <TrendingUp className="mr-2" /> Sales
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebarMenu mb-10">
           <h3 className="sidebarTitle text-lg font-semibold p-4">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem flex items-center p-4 cursor-pointer">
-              <Person className="mr-2" />
-              Users
-            </li>
+            <Link to="/users">
+              <li className="sidebarListItem flex items-center p-4 cursor-pointer">
+                <Person className="mr-2" />
+                Users
+              </li>
+            </Link>
+            <Link to="/products">
+              <li className="sidebarListItem flex items-center p-4 cursor-pointer">
+                <Storefront className="mr-2" /> Products
+              </li>
+            </Link>
             <li className="sidebarListItem flex items-center p-4 cursor-pointer">
               <AttachMoney className="mr-2" /> Transactions
             </li>

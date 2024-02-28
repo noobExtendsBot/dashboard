@@ -49,6 +49,23 @@ export const userData = [
     },
   ];
 
+// product data for Chart
+export const productData = [
+  {
+    name: "Jan",
+    "sales": 4000,
+  },
+  {
+    name: "Feb",
+    "sales": 3000,
+  },
+  {
+    name: "Mar",
+    "sales": 5000,
+  },
+];
+
+// userProfileData
 
  export const userRows = [
     {
@@ -133,3 +150,91 @@ export const userData = [
       transaction: "$120.00",
     },
   ];
+
+
+  // Product Data
+
+
+ export const productRows = [
+  {
+    id: 1,
+    name: "Mac",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    stock: 123,
+    status: "active",
+    price: "$120.00",
+  },
+  {
+    id: 2,
+    name: "HP Monitor",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    stock: 200,
+    status: "active",
+    price: "$120.00",
+  },
+  {
+    id: 3,
+    name: "MSI Laptop",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    stock: 500,
+    status: "active",
+    price: "$120.00",
+  },
+  {
+    id: 4,
+    name: "Death Adder V2",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    stock: 300,
+    status: "active",
+    price: "$120.00",
+  },
+  {
+    id: 5,
+    name: "CORSAIR",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    stock: 200,
+    status: "active",
+    price: "$120.00",
+  },
+  {
+    id: 6,
+    name: "JBL",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+      stock: 200,
+    status: "active",
+    price: "$120.00",
+  },
+  {
+    id: 7,
+    name: "Ipad",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    stock: 50,
+    status: "active",
+    price: "$120.00",
+  },
+  {
+    id: 8,
+    name: "iPhone",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    stock: 220,
+    status: "active",
+    price: "$120.00",
+  },
+  {
+    id: 9,
+    name: "One+",
+    img:
+      "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+    stock: 15,
+    status: "active",
+    price: "$120.00",
+  },
+];

@@ -6,8 +6,57 @@
     -moz-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.46);
 }
 
-.charTitle {
+.userTitle {
     margin-bottom: 20px;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.userContainer {
+    display: flex;
+    margin-top: 20px;
+}
+
+.userShow {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.46);
+    -moz-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.46);
+
+}
+
+.userUpdate {
+    flex: 2;
+    padding: 20px;
+    box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.46);
+    -moz-box-shadow: 10px 10px 8px -1px rgba(0,0,0,0.46);
+    margin-left: 20px;
+}
+
+.userShowTop {
+    display: flex;
+    align-items: center;
+}
+
+.userShowImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userShowTopTitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.userShowUsername {
+    font-weight: 600;
+}
+
+.userShowUserTitle {
+    font-weight: 300;
 }

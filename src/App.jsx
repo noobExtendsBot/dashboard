@@ -3,27 +3,31 @@ import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import UserList from "./components/pages/userList/UserList";
 import Home from "./components/pages/home/Home";
+import User from "./components/pages/user/User";
+import ProductList from "./components/pages/productList/ProductList";
+import Product from "./components/pages/product/Product";
+import NewProduct from "./components/pages/newProduct/NewProduct";
+import NewUser from "./components/pages/newUser/NewUser";
 
 import "./App.css";
-
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Topbar />
-      <div className="container mt-8 flex flex-col-reverse sm:flex-row">
-        <div className="sticky top-0 sm:h-screen sm:flex-none w-full sm:w-1/5">
-          <Sidebar />
-        </div>
-        <div className="flex-1">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/users" element={<UserList />} />
-            </Routes>
-          </BrowserRouter>
-        </div>
+
+      <div className="container">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<UserList />} />
+          <Route path="/user/:id" element={<User />} />
+          <Route path="/user/create" element={<NewUser />} />
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/product/create" element={<NewProduct />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
