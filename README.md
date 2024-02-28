@@ -41,3 +41,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 2. In Quick Menu only Users and Products are working. Both of them displays a table of users and products and you can delete the user from the table and product from product table. There is Edit button also and it will take you to a new page but it can't actually update the data in either of them.
 
 3) Rest of things are placeholder
+
+## Preview
+
+![](https://github.com/noobExtendsBot/dashboard/blob/main/dashboard.gif)
