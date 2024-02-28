@@ -10,7 +10,7 @@ const WidgetLarge = () => {
   return (
     <div className="widgetLarge">
       <h3 className="widgetLargeTitle">Latest Transactions</h3>
-      <table className="widgetLargeTable table-auto">
+      <table className="widgetLargeTable">
         <thead>
           <tr className="widgetLargeTr">
             <th className="widgetLargeTh">Customer</th>
@@ -19,7 +19,7 @@ const WidgetLarge = () => {
             <th className="widgetLargeTh">Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="tableBody">
           <tr className="widgetLargeTr">
             <td className="widgetLargeUser">
               <img
